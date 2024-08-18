@@ -127,7 +127,7 @@ const Login = () => {
   return (
     <div className={styles.login_main}>
       <form className={styles.login} onSubmit={handleSubmit}>
-        <h2 className={styles.h2}>Login</h2>
+        <h2 className={styles.h22}>Login</h2>
         <div className={styles.input_containe}>
           <label htmlFor="username">UserName:</label>
           <br />
