@@ -1,3 +1,7 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
 .main {
   display: flex;
   flex-direction: column;
@@ -31,6 +35,26 @@
   min-height: 300px;
   padding: 40px;
   background-color: rgb(180, 146, 212);
+  display:flex;
+  flex-direction: column;
+}
+
+.b {
+  background-color: rgb(97, 36, 242);
+  color: rgb(245, 235, 235);
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 40px;
+  margin-left: 0px;
+  width: 95%;
+}
+
+.paragraph {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
 }
 
 @media screen and (max-width: 576px) {
@@ -86,6 +110,36 @@
   }
 }
 
+@media screen and (min-width:992px) {
+  .input_container {
+    width: 90%;
+    /* justify-content: center; */
+    margin: 0px auto;
+    align-self: center;
+    justify-self: center;
+  }
+  .gender_container {
+    width:90%;
+    margin: 0px auto;
+  }
+  .location_input_container  {
+    width:90%;
+    margin: 0px auto;
+  }
+  .b{
+    width:clamp(90px  ,100px,150px);
+    margin: 20px auto;
+  }
+
+  .paragraph {
+    width:80%;
+    margin: 0px auto;
+  }
+  .sign_up{
+    width:23%;
+  }
+}
+
 @media screen and (max-width: 314px) {
   .main {
     margin-top: 15px;
@@ -111,10 +165,7 @@
   }
 }
 
-* {
-  padding: 0px;
-  margin: 0px;
-}
+
 body {
   height: 100vh;
 }
@@ -162,27 +213,13 @@ label {
   align-items: baseline;
   height: 1.2rem;
   padding: 0px;
-  margin: 50px 0px;
+  margin: 30px auto;
 }
-.b {
-  background-color: rgb(97, 36, 242);
-  color: rgb(245, 235, 235);
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  margin-top: 40px;
-  margin-left: 0px;
-  width: 95%;
-}
+
 .radio {
   width: 30px;
 }
 .error {
   color: red;
 }
-.paragraph {
-  margin-top: 15px;
-  display: flex;
-  justify-content: space-between;
-  width: 95%;
-}
+

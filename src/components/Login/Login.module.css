@@ -28,7 +28,7 @@
     rgba(16, 248, 209, 0.807)
   );
   /* background-color: rgba(255, 255, 255, 0.9); */
-  padding: 30px;
+  /* padding: 30px; */
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -141,26 +141,36 @@
 
 @media screen and (min-width: 992px) {
   .login {
-    max-width: 98%;
-
-    margin: auto;
+    
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     flex: 1 1 auto;
     padding: 10px 40px;
-    min-width: 150px;
+    width:clamp(150px , 80%,400px);
   }
   .but_style {
     min-width: 148px;
     max-width: 98vw;
+    height:30px;
   }
   .input {
-    min-width: 148px;
-    max-width: 600px;
+    width:clamp(150px,100%,400px);
+    margin-bottom: 10px;
+    height:36px;
+    font-size: 18px;
   }
-  .h2 {
+  .h22 {
     margin: 6vh;
+    width:clamp(150px,80%,400px);
+  }
+  .input_containe {
+    margin-bottom: 10px;
+    width:100%;
+  }
+  #label1{
+    font-size: 200px !important;
+    color:red;
   }
 }
 
