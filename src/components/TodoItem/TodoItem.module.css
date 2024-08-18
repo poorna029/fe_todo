@@ -1,0 +1,80 @@
+.val {
+  background-image: linear-gradient(
+    to top right,
+    rgba(32, 15, 104, 0.801),
+    rgb(51, 7, 20),
+    rgba(3, 22, 11, 0.314),
+    rgb(67, 5, 5)
+  );
+  /* padding: 5px 9px; */
+  border: none;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  height: 30px;
+  color: #ffffff;
+  width: 100%;
+}
+
+.icon1 {
+  margin-left: 9px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.icon {
+  margin-left: 9px;
+  color: red;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+  * {
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    width: 80%;
+  }
+
+  .val {
+    min-width: 280px;
+    max-width: 500px;
+    margin: 0px;
+    /* margin-left: -10px; */
+    margin-bottom: 10px;
+    /* display: inline-block; */
+    width: 100%;
+  }
+  .icon1,
+  .icon {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .icon1 {
+    margin-left: -25px;
+  }
+
+  .icon {
+    margin-left: 10px;
+  }
+  .val1 {
+    padding: 0px;
+    margin: 0px;
+    margin-left: -5px;
+    margin-right: -5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    height: 50px;
+    width: 30px;
+  }
+}
+
+.para {
+  padding-left: 5px;
+}

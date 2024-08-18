@@ -1,0 +1,188 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100vw;
+  margin-top: 10vh;
+}
+.success {
+  color: rgba(22, 165, 53, 0.616);
+  font-weight: 700;
+}
+.failure {
+  color: rgb(222, 67, 67);
+  font-weight: 700;
+}
+
+.loader_container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign_up {
+  border: 2px solid none;
+  border-radius: 10px;
+  width: 22%;
+  min-height: 300px;
+  padding: 40px;
+  background-color: rgb(180, 146, 212);
+}
+
+@media screen and (max-width: 576px) {
+  .main {
+    margin-top: 15px;
+    width: 100vw;
+  }
+  .sign_up {
+    width: 99vw;
+    padding: 15px;
+  }
+
+  .location_input_container {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 576px), (max-width: 768px) {
+  .main {
+    margin-top: 15px;
+    width: 100vw;
+  }
+  .sign_up {
+    width: 99vw;
+    padding: 15px;
+    max-width: 600px;
+  }
+  .input {
+    width: 80%;
+  }
+
+  .input_container {
+    width: 100%;
+  }
+  .locaion_input_container {
+    width: 95%;
+  }
+}
+.gender_label_input_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+@media screen and (max-width: 992px), (min-width: 768px) {
+  .main {
+    margin-top: 15px;
+    width: 100vw;
+  }
+  .sign_up {
+    width: 70vw;
+    padding: 15px;
+    max-width: 700px;
+  }
+}
+
+@media screen and (max-width: 314px) {
+  .main {
+    margin-top: 15px;
+    max-width: 250px;
+  }
+  .sign_up {
+    padding: 15px;
+    max-width: 250px;
+  }
+  .gender_container {
+    display: flex;
+    flex-direction: column;
+    margin-top: -150px;
+    padding-top: 0px;
+  }
+  .gender_label_input_container {
+    margin-top: -20px;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  .locaion_input_container {
+    margin-top: 50px;
+  }
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  height: 100vh;
+}
+
+.input_container,
+.locaion_input_container {
+  margin-right: auto;
+  text-align: left;
+  margin-bottom: 12px;
+}
+.input {
+  width: 95%;
+}
+
+.input {
+  margin-top: 8px;
+  padding: 4px;
+  border: 1px solid rgb(125, 125, 233);
+  border-radius: 5px;
+  width: 95%;
+}
+label {
+  color: rgb(24, 11, 35);
+  font-weight: 600;
+}
+.gender {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  justify-content: center;
+  align-items: center;
+  height: 1.2rem;
+}
+
+.gender1 {
+  align-self: flex-start;
+  /* margin-bottom: 30px;
+  margin-top: -30px; */
+}
+.gender_container {
+  margin-right: auto;
+  text-align: left;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: baseline;
+  height: 1.2rem;
+  padding: 0px;
+  margin: 50px 0px;
+}
+.b {
+  background-color: rgb(97, 36, 242);
+  color: rgb(245, 235, 235);
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 40px;
+  margin-left: 0px;
+  width: 95%;
+}
+.radio {
+  width: 30px;
+}
+.error {
+  color: red;
+}
+.paragraph {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+}
